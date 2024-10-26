@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useReducer, useMemo, useEffect } from "react";
-import { Box, Typography, IconButton, CircularProgress } from "@mui/material";
+import { Box, IconButton, CircularProgress, Card,CardContent,CardMedia,Typography } from "@mui/material";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { ThemeProvider, styled, createTheme } from "@mui/material/styles";
 import InfoIcon from "@mui/icons-material/Info";
@@ -981,6 +981,32 @@ export default function GameRoulette() {
             </Box>
           </Box>
         </Box>
+      </div>
+
+      <div className="bg-[#070005]">
+      <Card sx={{ display: 'flex' , backgroundColor:"#070005" }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <CardContent sx={{ flex: '1 0 auto' }}>
+          <Typography component="div" variant="h5">
+            Live From Space
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="div"
+            sx={{ color: 'text.secondary' }}
+          >
+            Mac Miller
+          </Typography>
+        </CardContent>
+        
+      </Box>
+      <CardMedia
+        component="img"
+        sx={{ width: 151 }}
+        image="/static/images/cards/live-from-space.jpg"
+        alt="Live from space album cover"
+      />
+    </Card>          
       </div>
     </ThemeProvider>
   );

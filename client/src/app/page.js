@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import LetsPlaySection from "@/components/LetsPlaySection";
 import FeatureGameSection from "@/components/FeatureGameSection";
+import { Footer } from "@/components/common/Footer";
 
 export default function Home() {
  
@@ -15,6 +16,7 @@ export default function Home() {
       <FeatureSection />
       <FeatureGameSection />
       <LetsPlaySection />
+      <Footer/>
     </div>
   );
 }

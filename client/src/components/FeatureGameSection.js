@@ -8,6 +8,47 @@ export default function FeatureGameSection() {
       className="flex flex-col items-center pt-7 pb-14 gap-14"
     >
       <h1 className="font-display text-[32px] leading-[40px] text-white">
+        Supported Chains
+      </h1>
+      <div className="flex flex-row justify-center gap-[21px] px-[76px]">
+        <a className="flex gap-6 flex-col" href="#">
+          <Image
+          className="rounded-full"
+            src="/images/games/cosmos.jpg"
+            alt="roulette"
+            width={140}
+            height={140}
+          />
+        </a>
+        <a className="flex gap-6 flex-col" href="#">
+          <Image
+          className="rounded-full"
+            src="/images/games/agoric.jpg"
+            alt="agoric"
+            width={140}
+            height={140}
+          />
+        </a>
+        <a className="flex gap-6 flex-col" href="#">
+          <Image
+          className="rounded-full"
+            src="/images/games/interchain.jpg"
+            alt="Interchain"
+            width={140}
+            height={140}
+          />
+        </a>
+        <a className="flex gap-6 flex-col" href="#">
+          <Image
+          className="rounded-full"
+            src="/images/games/neutron.jpg"
+            alt="Neutron"
+            width={140}
+            height={140}
+          />
+        </a>
+      </div>
+      <h1 className="font-display text-[32px] leading-[40px] text-white">
         Trending games
       </h1>
       <div className="flex flex-row justify-center gap-[21px] px-[76px]">

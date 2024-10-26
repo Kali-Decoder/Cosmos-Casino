@@ -5,9 +5,6 @@ import HeaderText from "@/components/HeaderText";
 import Container from "@/components/Container";
 import GradientBgButton from "@/components/GradientBgButton";
 export default function Page() {
-  
- 
-  
   return (
     <>
       <Navbar />
@@ -28,22 +25,23 @@ export default function Page() {
             <span className="text-xl text-sharp-purple">APY 2%</span>
           </div>
           <div className=" w-1/12 flex items-end justify-center">
-            <GradientBorderButton  classes="w-full h-2/3">
+            <GradientBorderButton classes="w-full h-2/3">
               Lend
             </GradientBorderButton>
           </div>
         </div>
         <div className="w-full h-0.5 magic-gradient"></div>
         <Container heading="Borrow">
-          <div className="flex w-full justify-between my-4">
+          <div className="flex w-full justify-around my-4">
+            
             <div className="magic-gradient p-0.5 rounded-md">
               <div className="bg-dark-pink font-sans flex gap-10 px-4 py-6 rounded-md">
                 <div className="flex  flex-col gap-3">
-                  <h5 className="text-xl font-sans">CURRENT</h5>
+                  <h5 className="text-xl font-sans">CURRENT BALANCE</h5>
                   <span className="flex items-center mb-5 gap-1">
-                    <p className="font-medium text-3xl">0</p>
+                    <p className="font-medium text-3xl">300 ATOM</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      Cosmos Chain
+                      Cosmos Testnet
                     </p>
                   </span>
                   <div>
@@ -53,23 +51,22 @@ export default function Page() {
                         className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
                       />
                     </div>
-                    <p className="text-sm">Max borrowable: 0.12334345353535</p>
+                    <p className="text-sm leading-10">Max borrowable: 100</p>
                   </div>
                 </div>
-                <div className="flex flex-col justify-end gap-4">
-                  <GradientBorderButton>Reply</GradientBorderButton>
-                  <button className="w-[120px] magic-gradient rounded-sm py-1 font-display">
-                    Borrow
-                  </button>
-                </div>
               </div>
+            </div>
+            <div className="flex items-center justify-center gap-4 w-[40%]">
+              <button className="w-[120px] magic-gradient rounded-sm py-1 font-display">
+                Bridge Your Assets (IBC)
+              </button>
             </div>
             <div className="magic-gradient p-0.5 rounded-md">
               <div className="bg-dark-pink font-sans flex gap-10 px-4 py-6 rounded-md">
                 <div className="flex  flex-col gap-3">
-                  <h5 className="text-xl font-sans">CURRENT</h5>
+                  <h5 className="text-xl font-sans">CURRENT BALANCE</h5>
                   <span className="flex items-center mb-5 gap-1">
-                    <p className="font-medium text-3xl">0</p>
+                    <p className="font-medium text-3xl">100 EVMOS</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
                       (EVMOS Testnet)
                     </p>
@@ -81,12 +78,8 @@ export default function Page() {
                         className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
                       />
                     </div>
-                    <p className="text-sm">Max borrowable: 0.12334345353535</p>
+                    <p className="text-sm leading-10">Max borrowable: 100</p>
                   </div>
-                </div>
-                <div className="flex flex-col justify-end gap-4">
-                  <GradientBorderButton>Reply</GradientBorderButton>
-                  <GradientBgButton>Borrow</GradientBgButton>
                 </div>
               </div>
             </div>
