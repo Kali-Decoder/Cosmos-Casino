@@ -3,43 +3,11 @@ import GradientBorderButton from "@/components/GradientBorderButton";
 import Navbar from "@/components/Navbar";
 import HeaderText from "@/components/HeaderText";
 import Container from "@/components/Container";
-import Image from "next/image";
 import GradientBgButton from "@/components/GradientBgButton";
-import { Aptos, AptosConfig, Network } from "@aptos-labs/ts-sdk";
-import { useWallet } from "@aptos-labs/wallet-adapter-react";
-import { toast } from "react-hot-toast";
-import { getPortfolio,authenticate } from "@/services/okto";
 export default function Page() {
-  const config = new AptosConfig({ network: Network.DEVNET });
-  const aptosClient = new Aptos(config);
-  const CONTRACT_ADDRESS =
-    "0x25e6d86a5a7083d9d61e40381e5238ab6d2e785825eba0183cebb6009483dab4";
-
-  const { account, signAndSubmitTransaction } = useWallet();
-  const getMetadata = async () => {
-    try {
-      const payload = {
-        function: `${CONTRACT_ADDRESS}::fa_coin::get_metadata`,
-        functionArguments: [],
-      };
-      const response = await aptosClient.view({ payload });
-      console.log(response, "Response from get_payout function");
-    } catch (error) {
-      console.error("Request failed:", error);
-      throw error;
-    }
-  };
-  const lend = async () => {
-    let id = toast.loading("Lending your amount...");
-    if (!account) return [];
-    try {
-   
-      const response = await authenticate();
-    } catch (error) {
-      console.log(error);
-      toast.error("Error in lending", { id });
-    }
-  };
+  
+ 
+  
   return (
     <>
       <Navbar />
@@ -60,7 +28,7 @@ export default function Page() {
             <span className="text-xl text-sharp-purple">APY 2%</span>
           </div>
           <div className=" w-1/12 flex items-end justify-center">
-            <GradientBorderButton onClick={getMetadata} classes="w-full h-2/3">
+            <GradientBorderButton  classes="w-full h-2/3">
               Lend
             </GradientBorderButton>
           </div>
@@ -75,7 +43,7 @@ export default function Page() {
                   <span className="flex items-center mb-5 gap-1">
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      Aptos Testnet
+                      Cosmos Chain
                     </p>
                   </span>
                   <div>
@@ -103,7 +71,7 @@ export default function Page() {
                   <span className="flex items-center mb-5 gap-1">
                     <p className="font-medium text-3xl">0</p>
                     <p className="text-sm font-sans opacity-50 flex self-end">
-                      (Sepolia Testnet)
+                      (EVMOS Testnet)
                     </p>
                   </span>
                   <div>
