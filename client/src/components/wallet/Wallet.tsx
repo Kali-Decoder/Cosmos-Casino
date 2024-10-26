@@ -66,8 +66,8 @@ export function Wallet({
   }, []);
 
   return (
-    <Box py="$16">
-      <Box mx="auto" maxWidth="28rem" attributes={{ mb: "$12" }}>
+    <div className="flex justify-center items-center gap-5">
+      <Box> 
         <ChainSelect
           chains={chains}
           chainName={chain.chain_name}
@@ -78,31 +78,18 @@ export function Wallet({
         direction="vertical"
         attributes={{
           mx: "auto",
-          px: "$8",
-          py: "$15",
           maxWidth: "21rem",
           borderRadius: "$lg",
           justifyContent: "center",
-          backgroundColor: useColorModeValue("$white", "$blackAlpha500"),
-          boxShadow: useColorModeValue(
-            "0 0 2px #dfdfdf, 0 0 6px -2px #d3d3d3",
-            "0 0 2px #363636, 0 0 8px -2px #4f4f4f",
-          ),
+         
         }}
       >
-        {username ? <User name={username} /> : null}
-        {address
-          ? <ClipboardCopyText text={address} truncate="middle" />
-          : null}
         <Box
-          my="$8"
           flex="1"
           width="full"
           display="flex"
-          height="$16"
           overflow="hidden"
           justifyContent="center"
-          px={{ mobile: "$8", tablet: "$10" }}
         >
           {ConnectButton}
         </Box>
@@ -112,6 +99,6 @@ export function Wallet({
           ? <Warning text={`${wallet?.prettyName}: ${message}`} />
           : null}
       </Stack>
-    </Box>
+    </div>
   );
 }
