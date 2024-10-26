@@ -30,7 +30,7 @@ The traditional online gambling industry is plagued by several issues, including
 
 ![APT-Casino - Analog pptx (3)](https://github.com/user-attachments/assets/5e9ad93d-c2ab-4ebf-b4cd-05d349a9744b)
 
-- **Low Fees and Flexible Policies:** Leveraging Cosmos Interchain and Neutron blockchain efficiency and scalable data transfers to minimize costs and remove withdrawal restrictions.
+- **Low Fees and Flexible Policies:** Leveraging Cosmos - Interchain transfers and Neutron blockchain efficiency and scalable data transfers to minimize costs and remove withdrawal restrictions.
 
 - **Cross-Chain Asset Transfers:** Seamless cross-chain transactions between Chains for ease of gameplay.
 
@@ -49,7 +49,7 @@ The traditional online gambling industry is plagued by several issues, including
 - **Cosmos-Casino** initially has a fully on-chain functional **European roulette game**.
 - Users can place various types of bets such as **straight, split, street, corner, six line, column, dozen, red, black, high, low, even, and odd.**
 - The **roulette wheel** randomly generates winning values using our in-built VRF & randomness module. A secure messaging ensures game logic is executed reliably across chains.
-- Winnings are automatically calculated and transferred to the user's wallet via keplr.
+- Winnings are automatically calculated and transferred to the user's wallet via Keplr.
 
 **Defi - Lending Aspect:**
 - Users can **deposit any tokens on Cosmos supported chain as collateral to borrow in-game currency (APTC)** such that if the user holding is in $ATOM token and if the value of $ATOM token goes up by 10% in markets then the value of the collateral goes up by 10% and users can enjoy playing games/ gambling without facing any financial losses as the in-game currency(APTC) is stable and has nothing to deal with collateral but if the collateral value hits a negative threshold of -10% in 24 hours then the APTC token will also be deducted similarly just like the case with mortgage NFT platforms like Ordinals.
