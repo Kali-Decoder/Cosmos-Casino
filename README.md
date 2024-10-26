@@ -105,6 +105,8 @@ We want to be the biggest gamefi/ gambling / games hub centre of the gaming and 
 
 By integrating Interchain, Neutron and Agoric, Cosmos-Casino not only addresses the fundamental issues in traditional online gaming/gambling but also sets a new standard for what a decentralized gambling platform can achieve.
 
-**PitchDeck:** https://docs.google.com/presentation/d/1MbnMW37hIPzvnUMGzLwP2BBhcRyi5iUXpysw7EFvmZY/edit?usp=sharing
+**PitchDeck:** 
+https://docs.google.com/presentation/d/1MbnMW37hIPzvnUMGzLwP2BBhcRyi5iUXpysw7EFvmZY/edit?usp=sharing
 
-**LitePaper:** https://docs.google.com/document/d/1Cjj1BH4WZIgaEYnsGZbAY8aq7y2Hse1ZR4AkTeJEtPs/edit?usp=sharing 
+**LitePaper:**
+https://docs.google.com/document/d/1Cjj1BH4WZIgaEYnsGZbAY8aq7y2Hse1ZR4AkTeJEtPs/edit?usp=sharing 
