@@ -4,87 +4,66 @@ import Navbar from "@/components/Navbar";
 import HeaderText from "@/components/HeaderText";
 import Container from "@/components/Container";
 import GradientBgButton from "@/components/GradientBgButton";
+
+const BalanceInfo = ({ balance, network, maxBorrowable }) => (
+  <div className="magic-gradient p-0.5 rounded-md">
+    <div className="bg-dark-pink font-sans flex gap-10 px-4 py-6 rounded-md">
+      <div className="flex flex-col gap-3">
+        <h5 className="text-xl font-sans">CURRENT BALANCE</h5>
+        <span className="flex items-center mb-5 gap-1">
+          <p className="font-medium text-3xl">{balance}</p>
+          <p className="text-sm font-sans opacity-50 flex self-end">{network}</p>
+        </span>
+        <div>
+          <div className="w-fit p-0.5 rounded-md magic-gradient">
+            <input
+              type="text"
+              className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
+              placeholder={`Max borrowable: ${maxBorrowable}`}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 export default function Page() {
   return (
     <>
       <Navbar />
-      <div className="pt-32 bg-sharp-black text-white px-14">
+      <div className="pt-32 bg-sharp-black text-white px-4 md:px-14">
         <HeaderText
           header="The Bank"
-          description={
-            "Hey champ! hit the bank and get your asserts to play a game."
-          }
+          description={"Hey champ! Hit the bank and get your assets to play a game."}
         />
         <div className="w-full justify-end font-display flex py-5">
           <div className="flex items-center px-3 flex-col border-r">
-            <h5 className="text-sm">TOTAL APT LIQUIDITY</h5>
+            <h5 className="text-sm">TOTAL APTC LIQUIDITY</h5>
             <span className="text-xl text-sharp-purple">203,746</span>
           </div>
           <div className="flex items-center px-3 flex-col">
-            <h5 className="text-sm">1 APT = $7.9 USDT</h5>
+            <h5 className="text-sm">1 APTC = $7.9 USDT</h5>
             <span className="text-xl text-sharp-purple">APY 2%</span>
           </div>
-          <div className=" w-1/12 flex items-end justify-center">
+          <div className="w-1/12 flex items-end justify-center">
             <GradientBorderButton classes="w-full h-2/3">
               Lend
             </GradientBorderButton>
           </div>
         </div>
         <div className="w-full h-0.5 magic-gradient"></div>
+        
         <Container heading="Borrow">
-          <div className="flex w-full justify-around my-4">
-            
-            <div className="magic-gradient p-0.5 rounded-md">
-              <div className="bg-dark-pink font-sans flex gap-10 px-4 py-6 rounded-md">
-                <div className="flex  flex-col gap-3">
-                  <h5 className="text-xl font-sans">CURRENT BALANCE</h5>
-                  <span className="flex items-center mb-5 gap-1">
-                    <p className="font-medium text-3xl">300 ATOM</p>
-                    <p className="text-sm font-sans opacity-50 flex self-end">
-                      Cosmos Testnet
-                    </p>
-                  </span>
-                  <div>
-                    <div className="w-fit p-0.5 rounded-md magic-gradient">
-                      <input
-                        type="text"
-                        className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
-                      />
-                    </div>
-                    <p className="text-sm leading-10">Max borrowable: 100</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center justify-center gap-4 w-[40%]">
-              <button className="w-[120px] magic-gradient rounded-sm py-1 font-display">
-                Bridge Your Assets (IBC)
-              </button>
-            </div>
-            <div className="magic-gradient p-0.5 rounded-md">
-              <div className="bg-dark-pink font-sans flex gap-10 px-4 py-6 rounded-md">
-                <div className="flex  flex-col gap-3">
-                  <h5 className="text-xl font-sans">CURRENT BALANCE</h5>
-                  <span className="flex items-center mb-5 gap-1">
-                    <p className="font-medium text-3xl">100 EVMOS</p>
-                    <p className="text-sm font-sans opacity-50 flex self-end">
-                      (EVMOS Testnet)
-                    </p>
-                  </span>
-                  <div>
-                    <div className="w-fit p-0.5 rounded-md magic-gradient">
-                      <input
-                        type="text"
-                        className="bg-dark-purple w-[250px] focus:outline-none p-1 rounded-md"
-                      />
-                    </div>
-                    <p className="text-sm leading-10">Max borrowable: 100</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-wrap w-full justify-around my-4 gap-4">
+            <BalanceInfo balance="100 ATOM" network="Cosmos Testnet" maxBorrowable="100" />
+            <button className="w-[120px] magic-gradient rounded-sm py-1 font-display">
+              Bridge Your Assets (IBC)
+            </button>
+            <BalanceInfo balance="200 EVMOS" network="EVMOS Testnet" maxBorrowable="100" />
           </div>
         </Container>
+
         <Container heading="Deposit Collateral">
           <div className="magic-gradient rounded-md mt-5 p-0.5">
             <table className="w-full rounded-lg">
@@ -98,37 +77,18 @@ export default function Page() {
                 </tr>
               </thead>
               <tbody className="bg-dark-pink">
-                <tr className="col-span-full h-0.5 w-full"></tr>
-                <tr className="">
-                  <td className="flex py-4 gap-3 pl-10">Aptos Testnet</td>
-                  <td className="px-5">$7.9</td>
-                  <td>8.2 APT</td>
-                  <td className="px-5">1.94%</td>
-                  <td className="flex items-center  justify-center gap-5">
-                    <GradientBorderButton>Withdraw</GradientBorderButton>
-                    <GradientBgButton>Deposit</GradientBgButton>
-                  </td>
-                </tr>
-                <tr className="py-4">
-                  <td className="flex py-4 gap-3 pl-10">Aptos Testnet</td>
-                  <td className="px-5">$7.9</td>
-                  <td>8.2 APT</td>
-                  <td className="px-5">1.94%</td>
-                  <td className="flex items-center justify-center gap-5">
-                    <GradientBorderButton>Withdraw</GradientBorderButton>
-                    <GradientBgButton>Deposit</GradientBgButton>
-                  </td>
-                </tr>
-                <tr className="py-4">
-                  <td className="flex py-4 gap-3 pl-10">Aptos Testnet</td>
-                  <td className="px-5">$7.9</td>
-                  <td>8.2 APT</td>
-                  <td className="px-5">1.94%</td>
-                  <td className="flex items-center py-4 justify-center gap-5">
-                    <GradientBorderButton>Withdraw</GradientBorderButton>
-                    <GradientBgButton>Deposit</GradientBgButton>
-                  </td>
-                </tr>
+                {["Evmos Testnet", "Cosmos Testnet"].map((asset, index) => (
+                  <tr key={index} className="py-4">
+                    <td className="flex py-4 gap-3 pl-10">{asset}</td>
+                    <td className="px-5">$17.9</td>
+                    <td>8.2 APTC</td>
+                    <td className="px-5">1.94%</td>
+                    <td className="flex items-center py-4 justify-center gap-5">
+                      <GradientBorderButton>Withdraw</GradientBorderButton>
+                      <GradientBgButton>Deposit</GradientBgButton>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
