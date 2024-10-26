@@ -26,9 +26,9 @@ export default function HeroSection() {
           Cosmos Casino
         </span>
         <h2 className="text-[#B3B3B3] mt-4 text-2xl">
-          Dive into the next generation of gaming with APT-Casino where every
+          Dive into the next generation of gaming with Cosmos-Casino where every
           move is
-          <br /> powered by APTOS blockchain technology. Discover new games,
+          <br /> powered by Cosmos, Interchain, Neutron blockchain technology. Discover new games,
           connect with friends, and unlock endless possibilities.
         </h2>
         <div className="flex gap-8 mt-10">
