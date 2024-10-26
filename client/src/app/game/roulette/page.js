@@ -1,6 +1,14 @@
 "use client";
 import React, { useState, useReducer, useMemo, useEffect } from "react";
-import { Box, IconButton, CircularProgress, Card,CardContent,CardMedia,Typography } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  CircularProgress,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { ThemeProvider, styled, createTheme } from "@mui/material/styles";
 import InfoIcon from "@mui/icons-material/Info";
@@ -603,7 +611,6 @@ export default function GameRoulette() {
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
   const theme = createTheme(muiStyles["dark"]);
 
-
   return (
     <ThemeProvider theme={theme}>
       <div className="font-sans bg-[#070005]">
@@ -940,12 +947,8 @@ export default function GameRoulette() {
                 mt: 1,
               }}
             >
-              <Button className="mt-4">
-                Get Payout
-              </Button>
-              <Button className="mt-10" >
-                Place Your Bet
-              </Button>
+              <Button className="mt-4">Get Payout</Button>
+              <Button className="mt-10">Place Your Bet</Button>
             </Box>
             <Box sx={{ ml: 3, mt: 1 }}>
               {rollResult >= 0 ? (
@@ -983,30 +986,26 @@ export default function GameRoulette() {
         </Box>
       </div>
 
-      <div className="bg-[#070005]">
-      <Card sx={{ display: 'flex' , backgroundColor:"#070005" }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            component="div"
-            sx={{ color: 'text.secondary' }}
-          >
-            Mac Miller
-          </Typography>
-        </CardContent>
-        
-      </Box>
-      <CardMedia
-        component="img"
-        sx={{ width: 151 }}
-        image="/static/images/cards/live-from-space.jpg"
-        alt="Live from space album cover"
-      />
-    </Card>          
+      <div className="bg-[#070005] mb-10">
+        <main>
+          <article>
+            <div class="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-transparent px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-white sm:shadow-lg">
+              <h2 class="text-2xl font-semibold">
+                How to Play
+              </h2>
+              <blockquote class="max-w-lg border-l-4 px-4">
+                Breif Discription of the game
+                <span class="whitespace-nowrap text-sm">— Roulette </span>
+              </blockquote>
+              <p className="text-sm">
+                Gameplay Overview Play this classic casino game by spinning the wheel numbered 0-36 with a variety of betting types, allowing you to manage your bankroll and strike it big! The ball travels throughout the roulette wheel during a betting round, landing on a number that will either provide a winning pay-out or losing outcome to the round. Players can bet odds, evens, red, black, dozens, street (row), low/high, and individual numbers to provide variety and options with their betting systems to win big. Roulette is a game in which players can control the volatility level of play by selecting lower but stable pay-out (2:1) with odds/evens, or, high volatility with giant payouts (36:1) by choosing their 'lucky' number or everything in-between. Roulette Betting This Stake Original casino game has a variety of betting options, such as the ability to set chip value, and betting amount as well as auto betting features that allow setting the number of bets, bet adjustments on win/loss, and stop on profit/loss to provide experienced players with betting systems the ability to bet strategically with the ease of online roulette. There is no distinct minimum bet and maximum bet sizes or values, meaning there are endless betting possibilities. You can bet an infinitely small value, and in turn, pay out infinitely large values! This fun game of chance is powered by a Random Number Generator (RNG) mechanic, which is what makes our game so exciting and unique from other versions of Roulette. Roulette is a simple game with plenty of betting options that allow you to dictate the volatility based on your preferred betting style. Nothing beats the thrill of spinning the roulette wheel at a casino and seeing where the ball lands. If you're looking to level up your strategy, check out our How to Play Roulette guide to help figure out the best ways to play for you. As one of the most popular online casino games on Stake, it is easy to see why Roulette is a favourite amongst our community of casino players. We have a wide range of roulette games and online slots, but our very own Stake Original has earned its popularity and status as one of our best and most iconic casino games.
+              </p>
+              <p className="text-sm mt-10">
+              How to Deposit Funds to Play Roulette Online & Bet Responsibly You can play Roulette at Stake.com by depositing in a local fiat currency or via cryptocurrencies. Right now, you can play all games at Stake.com with the following local currencies – ARS, CLP, BRL, JPY, INR, and PEN. Depending on your preferences, you can also view your balance in numerous other currencies too. You can find more information about our local currency options  on our community forum, as well as our local currency payment guide. To play Online Roulette with crypto, you can easily deposit crypto units into your account using coins like BTC, ETH, Doge, and LTC. You can find the full list of available cryptocurrencies on our blog, as well as our recommendations and guide for choosing the right coin for you. Stake offers live support to players via our customer support staff for help with issues like depositing and withdrawing units and more. Moonpay supports multiple payment options, including Visa, Mastercard, Apple Pay, Google Pay, and others, to buy cryptocurrency to enjoy Roulette. For a full list of supported payment options, please refer to the Moonpay documentation  . Learn how to use the Stake Vault to securely store your funds online for all future gameplay at Stake Casino. You can also read our crypto security guide to learn more about keeping your funds safe and secure at Stake.com. Please always remember to bet within your means and gamble responsibly . You can find out how to stay in control with our Stake Smart guidelines . You can also use our monthly budget calculator to determine how much of your disposable income you can afford to allocate to gambling.
+              </p>
+            </div>
+          </article>
+        </main>
       </div>
     </ThemeProvider>
   );
