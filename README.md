@@ -73,6 +73,10 @@ IBC also enable unified leaderboards and rewards across multiple chains, allowin
 
 ---
 
+### IBC LINK: https://ipfs.filebase.io/ipfs/QmaTkeuANooez9WaSyE95M4oF8KGcZbwDzHJyVgpoFjVvr 
+
+---
+
 ### Technical Architecture:
 
 ![Screenshot 2024-10-26 211421](https://github.com/user-attachments/assets/e7d0ce14-cf00-427d-b09f-8fc0762c420e)
