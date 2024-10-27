@@ -51,6 +51,15 @@ The traditional online gambling industry is plagued by several issues, including
 - The **roulette wheel** randomly generates winning values using our in-built VRF & randomness module. A secure messaging ensures game logic is executed reliably across chains.
 - Winnings are automatically calculated and transferred to the user's wallet via Keplr.
 
+- **Cross-Chain Liquidity Pool:**
+By leveraging IBC, Cosmos-Casino enables liquidity pooling across multiple Cosmos chains, increasing DeFi options for users and providing deeper liquidity for betting and gaming activities.
+
+- **Asset Bridging:**
+Players bridge assets from other Cosmos chains or compatible ecosystems into Cosmos-Casino for in-game purchases, NFTs, and betting, making the platform a more flexible, interconnected gaming hub.
+
+- **Cross-Chain Leaderboards and Rewards:**
+IBC also enable unified leaderboards and rewards across multiple chains, allowing players to participate and rank in games on different Cosmos chains, enhancing community engagement and competition.
+
 **Defi - Lending Aspect:**
 - Users can **deposit any tokens on Cosmos supported chain as collateral to borrow in-game currency (APTC)** such that if the user holding is in $ATOM token and if the value of $ATOM token goes up by 10% in markets then the value of the collateral goes up by 10% and users can enjoy playing games/ gambling without facing any financial losses as the in-game currency(APTC) is stable and has nothing to deal with collateral but if the collateral value hits a negative threshold of -10% in 24 hours then the APTC token will also be deducted similarly just like the case with mortgage NFT platforms like Ordinals.
 - Facilitates gameplay without the need to sell existing holdings.
